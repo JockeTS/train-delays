@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="se">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Only allow content from 'self', Lager API, GitHub, 'unsafe-eval' -->
+    <!-- Styles and fonts specified too -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' 'unsafe-eval' https://*.openstreetmap.org https://trafik.emilfolino.se;
+            style-src 'self' https://fonts.googleapis.com;
+            font-src https://fonts.gstatic.com;
+    ">
+
+    <title>Train Delays</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <link rel="stylesheet" href="./leaflet/leaflet.min.css" />
+    <link rel="stylesheet" href="./style/style.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- DEFER execution of js script until all of HTML doc is loaded -->
+    <script type="module" src="main.js" defer></script>
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+            <h2>Train Delays</h2>
+        </header>
+    
+        <!-- Main content element -->
+        <router-outlet></router-outlet>
+    </main>
+
+    <!-- Navigation element -->
+    <navigation-outlet></navigation-outlet>
+</body>
+</html>

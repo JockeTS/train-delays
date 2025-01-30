@@ -1,0 +1,40 @@
+.map {
+    border: 1px solid black;
+    height: 80vh;
+    width: 90%;
+    margin: auto;
+    z-index: 0;
+}
+
+.popup-header {
+    text-align: center;
+}
+
+.delay-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.175rem;
+
+    .delay-number {
+        width: 75px;
+        text-align: right;
+    }
+
+    .delay-to {
+        width: 125px;
+        text-align: left;
+    }
+
+    .delay-time {
+        width: 200px;
+    }
+}
+
+.explore-button {
+    padding: 0 0.175rem;
+}
+
+.hidden {
+    visibility: hidden;
+}

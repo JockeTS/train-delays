@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import './button.scss';
+@import './delayed-train.scss';
+@import './map.scss';
+
+$font-body: 'Merriweather', serif;
+$line-height: 1.4;
+$bg-color: rgb(192, 211, 255);
+
+/* Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: $bg-color;
+    font-size: 100%;
+}
+
+body {
+    background-color: $bg-color;
+    font-family: $font-body;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.4rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.325rem;
+}
+
+p {
+    margin-bottom: 1.4rem;
+    font-size: 1rem;
+}
+
+.main {
+    background-color: $bg-color;
+    padding: 0.7rem 0.7rem 60px;
+    margin-bottom: 80px;
+}
+
+.header {
+    margin-bottom: 0.7rem;
+    text-align: center;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 668px) {
+    .main {
+        padding-bottom: 240px;
+    }
+
+    .bottom-nav {
+        flex-flow: row wrap;
+    }
+}
